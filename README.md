@@ -9,6 +9,7 @@ My personal Arch Linux + Hyprland configuration.
 - **tmux** — tmux config with Catppuccin theme, TPM plugins
 - **nvim** — Neovim config (Kickstart-based) with LSP, Telescope, Neo-tree
 - **git** — gitconfig with aliases, delta diffs, global gitignore
+- **hypr** — Hyprland UserConfigs and UserScripts (keybinds, window rules, decorations, startup apps, scripts)
 
 ## Install
 
@@ -21,7 +22,7 @@ My personal Arch Linux + Hyprland configuration.
 ```bash
 git clone https://github.com/SinghCodes-404/dotfiles ~/dotfiles
 cd ~/dotfiles
-stow zsh starship tmux nvim git
+stow zsh starship tmux nvim git hypr
 ```
 
 Open nvim once to let plugins install automatically.

@@ -4,4 +4,9 @@ tmux/.config/tmux/plugins/
 # Backup files
 *.bak
 *.bak2
+*.save
+*.old
 *~
+
+# Hyprland — JaKooLit legacy reference file (Hyprland < 0.48 syntax, not for 0.55)
+hypr/.config/hypr/UserConfigs/WindowRules-old.conf
