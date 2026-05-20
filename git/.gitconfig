@@ -1,0 +1,77 @@
+[user]
+	name = SinghCodes-404
+	email = gs6117531@gmail.com
+
+[init]
+	defaultBranch = main
+
+[core]
+	editor = nvim
+	pager = delta
+	autocrlf = input
+	whitespace = trailing-space,space-before-tab
+	excludesFile = ~/.gitignore_global
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	side-by-side = true
+	line-numbers = true
+	syntax-theme = Catppuccin Frappe
+
+[alias]
+	# Shortcuts
+	st = status
+	co = checkout
+	br = branch
+	cm = commit -m
+	ca = commit --amend
+	cp = cherry-pick
+
+	# Better log views
+	lg = log --oneline --graph --decorate --all
+	ll = log --oneline -10
+	last = log -1 HEAD --stat
+
+	# Staging / undoing
+	unstage = reset HEAD --
+	undo = reset --soft HEAD~1
+
+	# Diffs
+	df = diff
+	dfs = diff --staged
+
+	# Branch / remote info
+	branches = branch -a
+	remotes = remote -v
+
+	# Open source fork workflow: fetch upstream changes and rebase your branch on top
+	sync = !git fetch upstream && git rebase upstream/main
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[merge]
+	conflictstyle = zdiff3
+
+[rerere]
+	enabled = true
+
+[branch]
+	sort = -committerdate
+
+[color]
+	ui = auto
+
+[credential "https://github.com"]
+	helper =
+	helper = !/home/anonymous/.local/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/home/anonymous/.local/bin/gh auth git-credential

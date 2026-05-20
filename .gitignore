@@ -1,0 +1,7 @@
+# tmux plugins (installed by TPM, not tracked)
+tmux/.config/tmux/plugins/
+
+# Backup files
+*.bak
+*.bak2
+*~
