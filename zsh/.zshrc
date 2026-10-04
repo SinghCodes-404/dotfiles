@@ -39,6 +39,8 @@ alias find='fd'
 alias du='dust'
 alias lg='lazygit'
 alias rm='rm -v'
+# system fixes
+alias usbfix='sudo bash ~/dotfiles/scripts/usb-reset.sh'  # revive the 2 dead USB ports + Bluetooth
 
 # ---- Keybindings ----
 bindkey '^H' backward-kill-word   # Ctrl+Backspace = delete word backward

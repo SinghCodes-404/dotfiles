@@ -10,3 +10,6 @@ tmux/.config/tmux/plugins/
 
 # Hyprland — JaKooLit legacy reference file (Hyprland < 0.48 syntax, not for 0.55)
 hypr/.config/hypr/UserConfigs/WindowRules-old.conf
+
+# Local system reference (hardware/disk details; kept off the public repo)
+SYSTEM_CONTEXT.md
