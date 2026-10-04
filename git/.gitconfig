@@ -75,3 +75,5 @@
 [credential "https://gist.github.com"]
 	helper =
 	helper = !/home/anonymous/.local/bin/gh auth git-credential
+[safe]
+	directory = /mnt/shared/Ideathon 2.O/V2-work

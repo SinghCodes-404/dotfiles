@@ -39,3 +39,5 @@ dist/
 build/
 *.o
 *.out
+
+**/.claude/settings.local.json

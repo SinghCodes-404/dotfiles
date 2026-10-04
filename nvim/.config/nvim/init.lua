@@ -168,6 +168,10 @@ do
   vim.keymap.set('n', '<S-l>', '<cmd>bnext<CR>', { desc = 'Next buffer' })
   vim.keymap.set('n', '<leader>x', '<cmd>bdelete<CR>', { desc = 'Close current buffer' })
 
+  -- Run current Python file with Space + r
+  vim.keymap.set("n", "<leader>r", ":w<CR>:!python %<CR>", 
+  { desc = "Run current file" })
+  
   -- Window splits
   vim.keymap.set('n', '<leader>sv', '<cmd>vsplit<CR>', { desc = '[S]plit [V]ertical' })
   vim.keymap.set('n', '<leader>sh', '<cmd>split<CR>', { desc = '[S]plit [H]orizontal' })
